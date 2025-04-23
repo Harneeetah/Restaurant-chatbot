@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <h3 id="header"> Restaurant ChatBot </h3>
+    <div class="main">
+      <ul class="message-container" id="message-container">
+        <li class="message-left">
+          <p id="message">
+            <h4 style="font-weight: 500;">Hey there, Welcome to Annie's Restaurant.</h4> <br>
+            Select [1] to place an order <br/><br/>
+            Select [99] to checkout order <br/><br/>
+            Select [98] to see order history <br/><br/>
+            Select [97] to see current order <br/><br/>
+            Select [0] to cancel order <br/><br/>
+          </p>
+        </li>
+      </ul>
+
+      <form action="" class="message-form" id="message-form">
+        <input type="text" name="message" id="message-input" class="message-input">
+        <div class="v-divider"></div>
+        <button type="submit" class="send-button"> send</button>
+      </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../main.js"></script>
+</html>
